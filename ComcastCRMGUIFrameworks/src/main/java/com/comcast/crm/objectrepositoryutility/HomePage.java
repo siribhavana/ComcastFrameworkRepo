@@ -19,6 +19,8 @@ public class HomePage { //Rule-1 Create a seperate java class
 	private WebElement organizationlink;
 	@FindBy(linkText="Contacts")
 	private WebElement contactlink;
+	@FindBy(linkText="Products")
+	private WebElement productlink;
 	@FindBy(linkText="More")
 	private WebElement morelink;
 	@FindBy(linkText="Campaigns")
@@ -32,6 +34,9 @@ public class HomePage { //Rule-1 Create a seperate java class
 	@FindBy(xpath="//img[@src='themes/softed/images/user.PNG']")
 	private WebElement adminimg;
 	
+	public WebElement getProductlink() {
+		return productlink;
+	}
 	public WebElement getOrganizationlink() {
 		return organizationlink;
 	}
